@@ -7,7 +7,7 @@ Gain further experience through a more challenging assignment in working with ar
 Required knowledge: variables, conditional statements, loops, arrays, strings, functions
 
 ## Part 1
-Write a program `minesweeper.c` that takes in dimensions m and n from the user and a probability p, then generates a Minesweeper board of size m*n where each cell has a probability of p to be a mine (probability is a number between 0 and 1).  Each cell that is not a mine contains a number representing how many mines (above, below, left, right, and diagonal) neighbor that "safe" cell.  Print the board, representing each mine as an asterisk (*).
+Write a program `minesweeper.c` that takes in dimensions m and n from the user and a probability p, then generates a Minesweeper board of size m x n where each cell has a probability of p to be a mine (probability is a number between 0 and 1).  Each cell that is not a mine contains a number representing how many mines (above, below, left, right, and diagonal) neighbor that "safe" cell.  Print the board, representing each mine as an asterisk (*).
 
 Your program should check for valid input.
 
@@ -28,8 +28,8 @@ Some tips:
 * It may be helpful to have all letters be uppercase or lowercase, and convert user input as appropriate
 * You should definitely use functions for this
 * Some useful library functions:
-	* c = toupper(c) will convert c to uppercase.  It is in the ctype.h library, so you will need to include that if you want to use this.  Similarly, c = tolower(c) will convert the character stored in c to lowercase
-	* isalpha(c) returns a 0 if the value stored in variable c is not a letter, and a non-zero number otherwise.  This function is also in the ctype.h library.
+	* `c = toupper(c)` will convert c to uppercase.  It is in the ctype.h library, so you will need to include that if you want to use this.  Similarly, c = tolower(c) will convert the character stored in c to lowercase
+	* `isalpha(c)` returns a 0 if the value stored in variable c is not a letter, and a non-zero number otherwise.  This function is also in the ctype.h library.
 	
 
 ### Submission Guidelines
