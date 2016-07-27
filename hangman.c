@@ -196,8 +196,8 @@ int main(){
 	int numOfGuess=0;
 	srand(time(NULL));
 
-	char word[20]="hello world";
-	//strcat(word,words[(rand()%10)]);
+	char word[20]="";
+	strcat(word,words[(rand()%10)]);
 	 
 	printf("\nWelcome To Hangman!\n");
 	printf("\nYou are trying to guess: \n");
