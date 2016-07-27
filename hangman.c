@@ -169,10 +169,10 @@ char input(char guessedLetters[26]){
 	}else{
 		while(getchar()!='\n');
 		while(1){
-			printf("Enter you guess: ");
+			printf("Enter your guess: ");
 			c = getchar();
 			if(isalpha(c)){
-				if(memberq(guessedLetters,26,c)){
+				if(memberq(guessedLetters,26,tolower(c))){
 					printf("You already guessed that character. ");
 					while(getchar()!='\n');
 				}else{
@@ -196,8 +196,8 @@ int main(){
 	int numOfGuess=0;
 	srand(time(NULL));
 
-	char word[20]="";
-	strcat(word,words[(rand()%11)]);
+	char word[20]="hello world";
+	//strcat(word,words[(rand()%10)]);
 	 
 	printf("\nWelcome To Hangman!\n");
 	printf("\nYou are trying to guess: \n");
